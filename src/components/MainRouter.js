@@ -7,8 +7,6 @@ import Student_details from './pages/Student_details'
 import Update from './pages/Update'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -39,9 +37,10 @@ const MainRouter = () => {
         <Route path="/" element={<Home/>}/> 
         <Route path="Registration" element={<Registration/>}/>
          <Route path="Stud_details" element={<Student_details/>}/>
-         <Route path="Update" element={<Update/>}/>
+         <Route path="update/:rno" element={<Update/>}/>
         <Route path="aboutus" element={<Aboutus/>}/>
         <Route path="contactus" element={<Contactus/>}/>
+
  
 </Routes>
 
